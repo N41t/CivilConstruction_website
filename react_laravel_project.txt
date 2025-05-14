@@ -1,0 +1,70 @@
+# ОСНОВНЫЕ КОМАНДЫ: 
+	- php artisan serve	-> запуск backend
+	- npm run dev		-> запуск frontend
+
+
+============================================================================================================================================================================================================================================
+
+# РАЗРАБОКТА ПРОЕКТА ПО ПОРЯДКУ:
+
+	ссылка: https://www.youtube.com/watch?v=Dnxwd7Xrg44&list=PLRB0wzP8AS_FVLc2HH1QHrL2QMLoE6esv&index=3&ab_channel=PHPTECHLIFE
+
+
+# ВИДЕО 1 (Установка проекта):
+
+	1) Инициализация проекта через: composer create-project laravel/laravel ИмяПроекта
+
+	2) После инициализации создаем БД в mysql: в данном случае "react_laravel_project_db"
+
+	3) Подключение БД в php storm:
+	- заходим в ./.env
+	- меняем настройки DB_CONNECTION, DB_HOST, DB_PORT и др. на необходимые нам
+	- обновляем миграции: php artisan migrate (laravel создаст в БД default таблицы)
+
+	4) Проверем запуск проекта: php artisan serve
+
+	5) Установка vite: npm create vite@latest, в основной папке:
+	- y
+	- "frontend"
+	- React
+	- JavaScript
+
+	6) Переходим в папку frontend: cd frontend
+
+	7) Устанавливаем npm в папку frontend: npm install
+
+	8) Запуск фронтенда командой: npm run dev
+
+	9) Заходим на сайт react bootstrap и устанавливаем его по команде: npm install react-bootstrap bootstrap (прописываем в терминале frontend)
+
+	10) Заходим в ./frontend/src/App.jsx и добавляем import 'bootstrap/dist....'
+
+	11) в ./frontend/src/App.jsx -> удаляем все между <> </> и добавляем кнопку <button> с параметрами
+
+	
+# ВИДЕО 2 (Создание UI Home Page):
+	
+	1) Установка React Router DOM: npm i react-router-dom
+	2) В App.jsx удаляем import './App.css'
+	3) Удалить файл App.css
+	4) Удалить файл index.css
+	5) В main.jsx удалить import './index.css'
+	6) В App.jsx прописываем <BrowserRouter> с вложенностью
+	7) Создаем в ./src папку 'components/frontend'
+	8) В ./src/components/frontend создаем файл 'Home.jsx'
+	9) В Home.jsx пишем 'rafce' - для создания стрелочной функции + экспорта default ('rfce' - для быстрого создания обычной функции + экспорта default) 
+	10) В ./src/components/frontend создаем файл 'About.jsx' -> также прописываем rafce + добавляем Route в App.jsx
+	11) Создаем в ./src/assets папку 'css'
+	12) Создаем в ./src/assets/css файл style.scss
+	13) Подключаем файл style.scss в App.jsx: (import './assets/css/style/scss')
+	14) Установка Saas: (npm install -D sass-embedded) -> чтобы не было ошибки Saas
+	15) Заполняем style.scss
+	16) Находим navbar в документации react bootstrap
+	17) Проводим изменения во фронтенде (делаем шапку, заголовок плюс меню)
+	18) Добавляем скачанную папку images в ./src/assets/
+	19) Добавляем и оформляем <main> и <footer>
+
+
+
+============================================================================================================================================================================================================================================
+
