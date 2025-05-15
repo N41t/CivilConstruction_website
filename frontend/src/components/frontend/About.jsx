@@ -1,8 +1,14 @@
 import React from 'react'
+import Header from '../common/Header'
+import Footer from '../common/Footer'
 
 const About = () => {
   return (
-    <div>About component</div>
+    <>
+      <Header/>
+        <main>About component</main>
+      <Footer/>
+    </>
   )
 }
 
