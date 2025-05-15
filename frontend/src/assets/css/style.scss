@@ -28,6 +28,15 @@ p {
     font-size: 1.2em;
 }
 
+ul {
+    margin-left: 0;
+    padding-left: 0;
+    li {
+        list-style: none;
+        margin-left: 0;
+    }
+}
+
 .btn-primary {
     background-color: $primary-color;
     border: 1px solid $primary-color;
@@ -79,6 +88,24 @@ header{
 
 footer {
     background-color: $dark-background;
+    color: $text-white;
+
+    h3 {
+        font-size: 1.5em;
+        color: $secondary-color;
+    }
+
+    ul {
+        li {
+            padding: 5px 0;
+        }
+    }
+
+    a {
+        color: $text-white;
+        font-size: 1.2em;
+        text-decoration: none;
+    }
 }
 
 
