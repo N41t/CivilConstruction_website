@@ -11,6 +11,10 @@ import Icon1 from '../../assets/images/icon-1.svg';
 import Icon2 from '../../assets/images/icon-2.svg';
 import Icon3 from '../../assets/images/icon-3.svg';
 import AvatarImg from '../../assets/images/author-2.jpg';
+import BlogImg from '../../assets/images/construction121.jpg';
+import BenefitsImg from '../../assets/images/construction9.jpg';
+import ChallengesImg from '../../assets/images/construction3.jpg';
+
 
 // import Swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -40,8 +44,8 @@ const Home = () => {
                             craftsmanship and precise <br/> attention to detail. 
                             With years of experience and a dedication to quality.</p>
                           <div className='mt-4'>
-                            <a className='btn btn-primary'>Contact Now</a>
-                            <a className='btn btn-secondary ms-2'>View Projects</a>
+                            <a className='btn btn-primary large'>Contact Now</a>
+                            <a className='btn btn-secondary ms-2 large'>View Projects</a>
                           </div>
                           
                       </div>
@@ -107,7 +111,7 @@ const Home = () => {
                           industry that focuses on projects requiring specialized skills, materials, 
                           and techniques.</p>
                       </div>
-                      <a href='#' className='btn btn-primary'>Read More</a>
+                      <a href='#' className='btn btn-primary small'>Read More</a>
                     </div>
 
                   </div>
@@ -127,7 +131,7 @@ const Home = () => {
                       <div className='service-content'>
                         <p>Civil construction is a core sector within the construction industry that focuses on the design, development and maintenance of infrastructure that supports modern society.</p>
                       </div>
-                      <a href='#' className='btn btn-primary'>Read More</a>
+                      <a href='#' className='btn btn-primary small'>Read More</a>
                     </div>
 
                   </div>
@@ -149,7 +153,7 @@ const Home = () => {
                           industry that focuses on projects requiring specialized skills, materials, 
                           and techniques.</p>
                       </div>
-                      <a href='#' className='btn btn-primary'>Read More</a>
+                      <a href='#' className='btn btn-primary small'>Read More</a>
                     </div>
 
                   </div>
@@ -171,7 +175,7 @@ const Home = () => {
                           industry that focuses on projects requiring specialized skills, materials, 
                           and techniques.</p>
                       </div>
-                      <a href='#' className='btn btn-primary'>Read More</a>
+                      <a href='#' className='btn btn-primary small'>Read More</a>
                     </div>
 
                   </div>
@@ -183,7 +187,6 @@ const Home = () => {
 
 
           {/* Why Choose Us Section */}
-          
           <section className='section-4 py-5'>
             <div className='container py-5'>
 
@@ -301,7 +304,7 @@ const Home = () => {
                           industry that focuses on projects requiring specialized skills, materials, 
                           and techniques.</p>
                       </div>
-                      <a href='#' className='btn btn-primary'>Read More</a>
+                      <a href='#' className='btn btn-primary small'>Read More</a>
                     </div>
 
                   </div>
@@ -323,7 +326,7 @@ const Home = () => {
                           industry that focuses on projects requiring specialized skills, materials, 
                           and techniques.</p>
                       </div>
-                      <a href='#' className='btn btn-primary'>Read More</a>
+                      <a href='#' className='btn btn-primary small'>Read More</a>
                     </div>
 
                   </div>
@@ -345,7 +348,7 @@ const Home = () => {
                           industry that focuses on projects requiring specialized skills, materials, 
                           and techniques.</p>
                       </div>
-                      <a href='#' className='btn btn-primary'>Read More</a>
+                      <a href='#' className='btn btn-primary small'>Read More</a>
                     </div>
 
                   </div>
@@ -367,7 +370,7 @@ const Home = () => {
                           industry that focuses on projects requiring specialized skills, materials, 
                           and techniques.</p>
                       </div>
-                      <a href='#' className='btn btn-primary'>Read More</a>
+                      <a href='#' className='btn btn-primary small'>Read More</a>
                     </div>
 
                   </div>
@@ -378,7 +381,7 @@ const Home = () => {
           </section>
 
 
-          {/* Testimonials */}
+          {/* Testimonials Section */}
           <section className='section-5 py-5'>
             <div className='container'>
 
@@ -576,6 +579,77 @@ const Home = () => {
 
             </div>
           </section>
+
+
+          {/* Blog & news section */}
+          <section className='section-6 bg-light py-5'>
+
+            <div className='container'>
+              <div className='section-header text-center'>
+                <span>Blog & News</span>
+                <h2>Articles & blog post</h2>
+                <p>We specialize in a wide range of construction services, including residental,
+                   commercial, and industrial projects.</p>
+              </div>
+            
+              <div className='row pt-3'>
+
+
+                {/* Dummy article new */}
+                <div className='col-md-4'>
+                  <div className='card shadow border-0'>
+                    <div className='card-img-top'>
+                      <img src={BlogImg} alt="" className='w-100'/>
+                    </div>
+                    <div className='card-body p-4'>
+                      <div className='mb-3'>
+                        <a href='#' className='title'>Dummy article new</a>
+                      </div>
+                      <a href='#' className='btn btn-primary small'>Read More</a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* The Benefits of Modular Construction Efficiency, Flexibility, and Sustainability */}  
+                <div className='col-md-4'>
+                  <div className='card shadow border-0'>
+                    <div className='card-img-top'>
+                      <img src={BenefitsImg} alt="" className='w-100'/>
+                    </div>
+                    <div className='card-body p-4'>
+                      <div className='mb-3'>
+                        <a href='#' className='title'>The Benefits of Modular Construction Efficiency, Flexibility, and Sustainability</a>
+                      </div>
+                      <a href='#' className='btn btn-primary small'>Read More</a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Challenges and Solutions in Commercial Construction Projects */}
+                <div className='col-md-4'>
+                  <div className='card shadow border-0'>
+                    <div className='card-img-top'>
+                      <img src={ChallengesImg} alt="" className='w-100'/>
+                    </div>
+                    <div className='card-body p-4'>
+                      <div className='mb-3'>
+                        <a href='#' className='title'>Challenges and Solutions in Commercial Construction Projects</a>
+                      </div>
+                      <a href='#' className='btn btn-primary small'>Read More</a>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </section>
+
+
+
+          
+          
+
 
 
       </main>
