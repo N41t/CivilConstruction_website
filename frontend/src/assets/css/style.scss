@@ -144,6 +144,8 @@ footer {
 }
 
 
+// ================ HOME PAGE ======================
+
 .section-1 {
     .hero {
         background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), 
@@ -295,6 +297,25 @@ footer {
                 font-size: 1.4em;
                 
             }
+        }
+    }
+}
+
+
+
+// ================== ABOUT PAGE ===========================
+.section-7 {
+    .hero {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), 
+            url('../images/hero.jpg');
+        min-height: 500px;
+
+        color: $text-white;
+
+        span {
+            color: $secondary-color;
+            font-size: 1.5em;
+            font-weight: 500;
         }
     }
 }
