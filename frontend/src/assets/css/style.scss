@@ -144,6 +144,8 @@ footer {
 }
 
 
+// ================ HOME PAGE ======================
+
 .section-1 {
     .hero {
         background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), 
@@ -294,6 +296,51 @@ footer {
             a.title {
                 font-size: 1.4em;
                 
+            }
+        }
+    }
+}
+
+
+
+// ================== ABOUT PAGE ===========================
+.section-7 {
+    .hero {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), 
+            url('../images/hero.jpg');
+        min-height: 500px;
+
+        color: $text-white;
+
+        span {
+            color: $secondary-color;
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+    }
+}
+
+.section-8 {
+    .card {
+        border-radius: 40px;
+        img {
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+
+        }
+        .card-body {
+            a.title {
+                font-size: 1.4em; 
+            }
+
+            .card-title {
+                font-size: 1.5em;
+                font-weight: 500;
+            }
+
+            .card-sub-title {
+                font-size: 1.3em;
+                font-weight: $light-background;
             }
         }
     }
