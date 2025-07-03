@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
@@ -27,7 +28,19 @@ class AuthenticationController extends Controller
             ];
 
             if (Auth::attempt($credentials)) {
-                return Auth::user();
+
+                $user = User::find(Auth::user()->id);
+
+                $token = $user->createToken('token')->plainTextToken;
+
+                // sending token to client
+
+                return response()->json([
+                    'status' =>true,
+                    'token' => $token,
+                    'id' => Auth::user()->id
+                ]);
+
             } else {
                 return response()->json([
                 'status' => false,
@@ -36,5 +49,15 @@ class AuthenticationController extends Controller
             }
         }
 
+    }
+
+    public function logout() {
+        $user = User::find(Auth::user()->id);
+        $user->tokens()->delete();
+
+        return response()->json([
+            'status' => true,
+            'message' => 'Logout successfully'
+        ]);
     }
 }
