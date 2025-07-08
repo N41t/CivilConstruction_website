@@ -2,8 +2,12 @@ import React from 'react'
 import Header from '../common/Header';
 import Footer from '../common/Footer';
 import { useForm } from "react-hook-form";
+import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
+
+    const navigate = useNavigate();
 
     const {
         register,
@@ -12,8 +16,26 @@ const Login = () => {
         formState: { errors },
     } = useForm()
 
-    const onSubmit = (data) => {
-        console.log(data)
+    const onSubmit = async (data) => {
+        // console.log(data)
+
+        const res = await fetch("http://localhost:8000/api/authenticate", {
+            method: 'POST',
+            headers: {
+                'Content-type' : 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+
+        const result = await res.json();
+
+        if (result.status == false) {
+            toast.error(result.message)
+        } else {
+            navigate('/admin/dashboard')
+        }
+
+        //console.log(result);
     }
 
   return (

@@ -11,6 +11,9 @@ import Projects from './components/frontend/Projects';
 import Blogs from './components/frontend/Blogs';
 import Contact from './components/frontend/Contact';
 import Login from './components/backend/Login';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Dashboard from './components/backend/Dashboard';
 
 
 function App() {
@@ -30,10 +33,16 @@ function App() {
           <Route path='/blogs' element={<Blogs/>} />
           <Route path='/contact' element={<Contact/>} />
           <Route path='/admin/login' element={<Login/>} />
+          <Route path='/admin/dashboard' element={<Dashboard/>} />
+
 
         </Routes>
 
       </BrowserRouter>
+      <ToastContainer
+        position='top-center'
+      />
+
     </>
   )
 }
