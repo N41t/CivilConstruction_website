@@ -32,6 +32,14 @@ const Login = () => {
         if (result.status == false) {
             toast.error(result.message)
         } else {
+
+            const userInfo = {
+                id: result.id,
+                token: result.token
+            }
+
+            localStorage.setItem('userInfo', JSON.stringify(userInfo))
+
             navigate('/admin/dashboard')
         }
 
